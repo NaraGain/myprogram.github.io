@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
     body{
         margin: 0;
       
@@ -22,45 +24,103 @@
     {
       display: flex;
     }
-    #imgc{
+   img{
         width: 50px;
         margin-top: 10px;
         padding: 5px;
-      
+    border-radius: 50%;
        
     }
 li{
     display: inline;
     font-size: 10px;
 }
+
+#list{
+    font-size: 10px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+li{
+    
+    
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+#main-content{
+    display: flex;
+  
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    
+}
+#content-2{
+    display: flex;
+    flex-direction: column;
+}
+#content{
+  background-color: rgb(255, 255, 255);
+ width: 70%;
+ height: fit-content;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ padding: 10px;
+}
+
+#content-1{
+   
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+   
+
+}
+#description{
+    padding: 5px 1rem;
+}
+footer{
+    margin-top: 10px;
+}
+#comment{
+
+}
+}
     </style>
 </head>
 <body>
   
-    <div style="text-align: center;background-color: rgb(88, 20, 66);width: 100%;height:4rem ;
+    <div  id = "nav-bar" style="text-align: center;background-color: rgb(88, 20, 66);width: 100%;height:4rem ;
     overflow: hidden;
     color:white;font-size: 2em;"> Welcome to My page</div>  
     
     <div id ="main-content">
-    <div style="border: 2.ch;border-style: solid;border-color:black ;
-    border-radius: 10px;
-    padding: 10px;width: 15em; margin: 10px;">
-        <div style="border: 1px solid red; display: flex; flex-direction: column;">
-           
+    <div id = "content">
+        <div id ="content-1">
+            <div id ="content-2">
+                <span>
+           <img src="imga/img1.png">
+           <h5>Dara</h5>
+                </span>
+                <div id ="description">Hello This My file i Want everyone to checkout</div>
       <a href="https://www.w3schools.com/css/css_border.asp">JavaScript.js</a>
       
-     
-          <span id ="list">
-        <ul>
-            <li>
-                file type:public File.
-            </li>.
-            <li>size:35kB.</li>
-            <li>Autor:SuperCool.</li>
-        </ul>
-          </span>
+            </div>
+        
       
         </div>
+        <span id ="list">
+            <ul>
+                <li>
+                    file type:public File.
+                </li>.
+                <li>size:35kB.</li>
+                <li>Autor:SuperCool.</li>
+            </ul>
+              </span>
         <div style="padding: 10px 5px 10px 5px;">
         <button>add new File</button>
         <button>pull file</button>
@@ -70,22 +130,23 @@ li{
         <form style="padding-top: 5px;">
             <input type="search" placeholder="sreach">
             <input type="submit">
-            <div style="background-color: rgb(201, 200, 200); width: 100%; min-height:fit-content;border-radius: 10px;margin-top: 10px;">
+            <div style="background-color: rgb(255, 255, 255); width: fit-content; min-height:fit-content;border-radius: 10px;margin-top: 10px;">
                 <span>
                 <img id ="imgc" src="imga/img1.png">
                 <h5>Dara</h5>
                 </span>
-<p style="padding: 10px;">  Hello World this should be edit and line 2 please check and complete it </p>
+<p id ="comment"style="padding: 5px;">  Hello World this should be edit and line 2 please check and complete it </p>
             </div>
             <form>
         <div>
       <textarea name="comment" id="comment_1" cols="30" rows="5"></textarea>
-      <div style="width: 100%;  display: flex;justify-content: flex-end;align-items:center">
-      <input type="submit" style="align-self: flex-end;" >
+      <div style="width: 100%;  display: flex;justify-content: flex-start;align-items:center">
+      <input type="submit" style="align-self: start;" >
       </div>
         </div>
     </div>
     
 </div>
+<footer>@Copy Right 2021 make by wool Co,Ltd</footer>
 </body>
 </html>
