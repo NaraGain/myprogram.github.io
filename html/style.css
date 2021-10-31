@@ -85,3 +85,12 @@ textarea{
     resize: none;
     width: 100%;
 }
+
+footer{
+    width: 100%;
+}
+
+#dese{
+    padding: 10px;
+    background-color: rgb(221, 221, 221);
+}
